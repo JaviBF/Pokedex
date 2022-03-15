@@ -90,6 +90,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexión.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana1.Designer.cs">
+      <DependentUpon>Ventana1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana2.Designer.cs">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </Compile>
     <Compile Include="VentanaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +116,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -107,6 +128,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Ventana1.resx">
+      <DependentUpon>Ventana1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana2.resx">
+      <DependentUpon>Ventana2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VentanaPrincipal.resx">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
