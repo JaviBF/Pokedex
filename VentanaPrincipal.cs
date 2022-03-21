@@ -20,6 +20,10 @@ namespace Pokedex
         public VentanaPrincipal()
         {
             InitializeComponent();
+            misPokemons = miConexión.getPokemonPorId(idActual);
+            nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
+            pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+
             izquierda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             izquierda.FlatAppearance.BorderSize = 0;
             izquierda.FlatAppearance.MouseDownBackColor = Color.Transparent;
@@ -50,6 +54,10 @@ namespace Pokedex
         
 
             idActual--;
+            if (idActual <=0)
+            {
+                idActual = 151;
+            }
             misPokemons = miConexión.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
@@ -68,6 +76,10 @@ namespace Pokedex
         private void derecha_Click(object sender, EventArgs e)
         {
             idActual++;
+            if(idActual >= 151)
+            {
+                idActual = 1;
+            }
             misPokemons = miConexión.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
