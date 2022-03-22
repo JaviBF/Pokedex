@@ -31,7 +31,7 @@ namespace Pokedex
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Abrir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,24 +45,24 @@ namespace Pokedex
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
+            // Abrir
             // 
-            this.button1.Font = new System.Drawing.Font("Consolas", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(106, 202);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(147, 115);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Abrir!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Abrir.Font = new System.Drawing.Font("Consolas", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Abrir.ForeColor = System.Drawing.Color.Red;
+            this.Abrir.Location = new System.Drawing.Point(106, 201);
+            this.Abrir.Name = "Abrir";
+            this.Abrir.Size = new System.Drawing.Size(148, 108);
+            this.Abrir.TabIndex = 2;
+            this.Abrir.Text = "Abrir!";
+            this.Abrir.UseVisualStyleBackColor = true;
+            this.Abrir.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 360);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Abrir);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -74,6 +74,6 @@ namespace Pokedex
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Abrir;
     }
 }

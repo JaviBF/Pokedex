@@ -15,6 +15,12 @@ namespace Pokedex
         public Form1()
         {
             InitializeComponent();
+
+            Abrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            Abrir.FlatAppearance.BorderSize = 0;
+            Abrir.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            Abrir.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            Abrir.BackColor = Color.Transparent;
         }
 
         private void button1_Click(object sender, EventArgs e)

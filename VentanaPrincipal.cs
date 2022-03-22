@@ -20,9 +20,11 @@ namespace Pokedex
         public VentanaPrincipal()
         {
             InitializeComponent();
+
             misPokemons = miConexión.getPokemonPorId(idActual);
             nombrePokemon.Text = misPokemons.Rows[0]["nombre"].ToString();
             pictureBox1.Image = convierteBlobAImagen((byte[])misPokemons.Rows[0]["imagen"]);
+
 
             izquierda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             izquierda.FlatAppearance.BorderSize = 0;
